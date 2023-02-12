@@ -122,6 +122,7 @@ html {
   left: 67px;
   top: 136px;
   margin: auto;
+  border: 2px solid white;
   z-index: 2;
 }
 
@@ -136,9 +137,9 @@ html {
   background: #e36464;
   mix-blend-mode: multiply;
   border: 1px solid #000000;
-  -webkit-filter: blur(150px);
-          filter: blur(150px);
-  z-index: 1;
+  -webkit-filter: blur(700px);
+          filter: blur(700px);
+  z-index: -1;
 }
 
 .second-round-gradient {
@@ -147,11 +148,11 @@ html {
   height: 567px;
   left: 206px;
   top: -131px;
-  background: rgba(255, 0, 0, 0.6);
+  background: rgba(255, 0, 0, 0);
   mix-blend-mode: difference;
-  -webkit-filter: blur(150px);
-          filter: blur(150px);
-  z-index: 1;
+  -webkit-filter: blur(500px);
+          filter: blur(500px);
+  z-index: -1;
 }
 
 .logotip {
@@ -162,34 +163,22 @@ html {
   top: 28px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 4;
 }
 
 .coffeecup-img {
   position: absolute;
   width: 760px;
-  height: 630px;
-  left: 7px;
+  height: 600px;
+  left: -10px;
   top: -140px;
   background: url(round-lid-large-02.png);
   mix-blend-mode: normal;
   -webkit-filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.25));
-  -webkit-transform: rotate(-5.94deg);
-          transform: rotate(-5.94deg);
-  z-index: 3;
-}
-
-.background-image {
-  position: relative;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: url(.png);
-  -webkit-filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
-          filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
-  border-radius: 20px;
-  z-index: 4;
+  -webkit-transform: rotate(-8 deg);
+          transform: rotate(-8 deg);
+  z-index: 6;
 }
 
 h1 {
@@ -225,23 +214,23 @@ p.wall-graffity-one {
   width: 228px;
   height: 119px;
   left: 224.24px;
-  top: 17px;
+  top: 45px;
   -webkit-transform: rotate(10.28deg);
           transform: rotate(10.28deg);
 }
 p.wall-graffity-two {
   width: 288px;
   height: 119px;
-  left: 263px;
-  top: 191.93px;
+  left: 310px;
+  top: 150px;
   -webkit-transform: rotate(-20.3deg);
           transform: rotate(-20.3deg);
 }
 p.wall-graffity-three {
   width: 92px;
   height: 119px;
-  left: 517.37px;
-  top: 152px;
+  left: 550px;
+  top: 170px;
   -webkit-transform: rotate(2.59deg);
           transform: rotate(2.59deg);
 }
@@ -249,12 +238,12 @@ p.wall-graffity-four {
   width: 92px;
   height: 119px;
   left: 294.04px;
-  top: 96px;
+  top: 110px;
   -webkit-transform: rotate(15.12deg);
           transform: rotate(15.12deg);
 }
 
-.gorisontal-line {
+.gorisontal-line-one {
   position: absolute;
   width: 106px;
   height: 9px;
@@ -262,4 +251,114 @@ p.wall-graffity-four {
   top: 140px;
   background: #033624;
   z-index: 4;
+}
+
+.gorisontal-line-two {
+  position: absolute;
+  width: 25.89px;
+  height: 8.63px;
+  left: 215px;
+  top: 230px;
+  background: #ffffff;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.background-filter {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(38.96deg, #022e14 18.35%, #14801f 104.56%);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  z-index: 5;
+}
+
+.background-image {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: url(.png);
+  -webkit-filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
+          filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
+  z-index: 4;
+}
+
+.vertikal-line {
+  position: absolute;
+  width: 0px;
+  height: 82px;
+  left: 635px;
+  top: 28px;
+  border: 2px solid rgba(159, 184, 180, 0.9);
+}
+
+.facebook-logo {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 627px;
+  top: 142px;
+}
+
+.instagram-logo {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  left: 626px;
+  top: 120px;
+}
+
+.background-shine {
+  position: absolute;
+  width: 666px;
+  height: 328px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(233.55deg, #ff008a -13.15%, #002c3f 88.45%);
+  mix-blend-mode: overlay;
+  border-radius: 20px;
+}
+
+.mini-round-one {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 340px;
+  top: 299px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
+}
+
+.mini-round-two {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 325px;
+  top: 299px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
+}
+
+.mini-round-three {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 310px;
+  top: 299px;
+  background: #033624;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
 }
