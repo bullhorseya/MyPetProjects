@@ -96,16 +96,18 @@ html {
 .first-background-gradient {
   height: 600px;
   width: 800px;
-  background: linear-gradient(245.27deg, #ff00d6 -3.85%, #00631c 95.68%);
+  background: #033624;
+  background: linear-gradient(38.96deg, #04023c -3.85%, #c45ed9 95.68%);
   background-position: center;
-  position: relative;
-  top: 20px;
+  position: absolute;
+  top: 40px;
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 1;
   margin: auto;
   border-radius: 20px;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .second-background-gradient {
@@ -114,16 +116,42 @@ html {
   height: 328px;
   left: 0px;
   top: 0px;
-  background: linear-gradient(233.55deg, #ff008a -13.15%, #002c3f 88.45%);
-  mix-blend-mode: overlay;
+  background: linear-gradient(233.55deg, #71489f -13.15%, #110823 88.45%);
   border-radius: 20px;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
+  left: 67px;
+  top: 136px;
   margin: auto;
+  z-index: 2;
+}
+
+.first-round-gradient {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 436px;
+  height: 436px;
+  left: -140px;
+  top: -20px;
+  background: #e36464;
+  mix-blend-mode: multiply;
+  border: 1px solid #000000;
+  -webkit-filter: blur(150px);
+          filter: blur(150px);
+  z-index: 1;
+}
+
+.second-round-gradient {
+  position: relative;
+  width: 567px;
+  height: 567px;
+  left: 206px;
+  top: -131px;
+  background: rgba(255, 0, 0, 0.6);
+  mix-blend-mode: difference;
+  -webkit-filter: blur(150px);
+          filter: blur(150px);
+  z-index: 1;
 }
 
 .logotip {
@@ -132,18 +160,106 @@ html {
   height: 36px;
   left: 26px;
   top: 28px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.coffe-image {
+.coffeecup-img {
   position: absolute;
-  width: 810px;
-  height: 540px;
+  width: 760px;
+  height: 630px;
   left: 7px;
-  top: -74.12px;
+  top: -140px;
   background: url(round-lid-large-02.png);
   mix-blend-mode: normal;
   -webkit-filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.25));
   -webkit-transform: rotate(-5.94deg);
           transform: rotate(-5.94deg);
+  z-index: 3;
+}
+
+.background-image {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: url(.png);
+  -webkit-filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
+          filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
+  border-radius: 20px;
+  z-index: 4;
+}
+
+h1 {
+  position: absolute;
+  width: 192px;
+  height: 98px;
+  left: 26px;
+  top: 152px;
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  color: #033624;
+  line-height: 70px;
+  z-index: 5;
+}
+h1 span {
+  color: white;
+}
+
+p {
+  position: absolute;
+  font-family: "Rock Salt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 119px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+p.wall-graffity-one {
+  width: 228px;
+  height: 119px;
+  left: 224.24px;
+  top: 17px;
+  -webkit-transform: rotate(10.28deg);
+          transform: rotate(10.28deg);
+}
+p.wall-graffity-two {
+  width: 288px;
+  height: 119px;
+  left: 263px;
+  top: 191.93px;
+  -webkit-transform: rotate(-20.3deg);
+          transform: rotate(-20.3deg);
+}
+p.wall-graffity-three {
+  width: 92px;
+  height: 119px;
+  left: 517.37px;
+  top: 152px;
+  -webkit-transform: rotate(2.59deg);
+          transform: rotate(2.59deg);
+}
+p.wall-graffity-four {
+  width: 92px;
+  height: 119px;
+  left: 294.04px;
+  top: 96px;
+  -webkit-transform: rotate(15.12deg);
+          transform: rotate(15.12deg);
+}
+
+.gorisontal-line {
+  position: absolute;
+  width: 106px;
+  height: 9px;
+  left: 26px;
+  top: 140px;
+  background: #033624;
+  z-index: 4;
 }
