@@ -1,0 +1,18 @@
+// Файл обнуляющих стилейм
+@import "nullstyle.scss";
+
+body {
+  background-color: #00704a;
+  width: 980px;
+  height: 1440px;
+}
+
+.white-elipse {
+  position: absolute;
+  width: 1497px;
+  height: 1497px;
+  left: -464px;
+  top: -258px;
+  border-radius: 50%;
+  background: #ffffff;
+}
