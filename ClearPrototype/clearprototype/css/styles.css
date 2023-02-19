@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html {
+  height: 100%;
+}
+
+.first-background-gradient {
+  height: 600px;
+  width: 800px;
+  background: #033624;
+  background: linear-gradient(38.96deg, #04023c -3.85%, #c45ed9 95.68%);
+  background-position: center;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.second-background-gradient {
+  text-align: center;
+  width: 666px;
+  height: 328px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(233.55deg, #71489f -13.15%, #110823 88.45%);
+  border-radius: 20px;
+  position: absolute;
+  left: 67px;
+  top: 136px;
+  margin: auto;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.first-round-gradient {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 436px;
+  height: 436px;
+  left: -140px;
+  top: -20px;
+  background: #e36464;
+  mix-blend-mode: multiply;
+  border: 1px solid #000000;
+  -webkit-filter: blur(700px);
+          filter: blur(700px);
+  z-index: -1;
+}
+
+.second-round-gradient {
+  position: relative;
+  width: 567px;
+  height: 567px;
+  left: 206px;
+  top: -131px;
+  background: rgba(255, 0, 0, 0);
+  mix-blend-mode: difference;
+  -webkit-filter: blur(500px);
+          filter: blur(500px);
+  z-index: -1;
+}
+
+.logotip {
+  position: absolute;
+  width: 46px;
+  height: 36px;
+  left: 26px;
+  top: 28px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 4;
+}
+
+.coffeecup-img {
+  position: absolute;
+  width: 760px;
+  height: 600px;
+  left: -10px;
+  top: -140px;
+  background: url(round-lid-large-02.png);
+  mix-blend-mode: normal;
+  -webkit-filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.25));
+  -webkit-transform: rotate(-8 deg);
+          transform: rotate(-8 deg);
+  z-index: 6;
+}
+
+h1 {
+  position: absolute;
+  width: 192px;
+  height: 98px;
+  left: 26px;
+  top: 152px;
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  color: #033624;
+  line-height: 70px;
+  z-index: 5;
+}
+h1 span {
+  color: white;
+}
+
+p {
+  position: absolute;
+  font-family: "Rock Salt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 119px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+p.wall-graffity-one {
+  width: 228px;
+  height: 119px;
+  left: 224.24px;
+  top: 45px;
+  -webkit-transform: rotate(10.28deg);
+          transform: rotate(10.28deg);
+}
+p.wall-graffity-two {
+  width: 288px;
+  height: 119px;
+  left: 310px;
+  top: 150px;
+  -webkit-transform: rotate(-20.3deg);
+          transform: rotate(-20.3deg);
+}
+p.wall-graffity-three {
+  width: 92px;
+  height: 119px;
+  left: 550px;
+  top: 170px;
+  -webkit-transform: rotate(2.59deg);
+          transform: rotate(2.59deg);
+}
+p.wall-graffity-four {
+  width: 92px;
+  height: 119px;
+  left: 294.04px;
+  top: 110px;
+  -webkit-transform: rotate(15.12deg);
+          transform: rotate(15.12deg);
+}
+
+.gorisontal-line-one {
+  position: absolute;
+  width: 106px;
+  height: 9px;
+  left: 26px;
+  top: 140px;
+  background: #033624;
+  z-index: 4;
+}
+
+.gorisontal-line-two {
+  position: absolute;
+  width: 25.89px;
+  height: 8.63px;
+  left: 215px;
+  top: 230px;
+  background: #ffffff;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.background-filter {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(38.96deg, #022e14 18.35%, #14801f 104.56%);
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  z-index: 5;
+}
+
+.background-image {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: url(.png);
+  -webkit-filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
+          filter: drop-shadow(10px 10px 30px rgba(160, 1, 164, 0.32));
+  z-index: 4;
+}
+
+.vertikal-line {
+  position: absolute;
+  width: 0px;
+  height: 82px;
+  left: 635px;
+  top: 28px;
+  border: 2px solid rgba(159, 184, 180, 0.9);
+}
+
+.facebook-logo {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 627px;
+  top: 142px;
+}
+
+.instagram-logo {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  left: 626px;
+  top: 120px;
+}
+
+.background-shine {
+  position: absolute;
+  width: 666px;
+  height: 328px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(233.55deg, #ff008a -13.15%, #002c3f 88.45%);
+  mix-blend-mode: overlay;
+  border-radius: 20px;
+}
+
+.mini-round-one {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 340px;
+  top: 299px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
+}
+
+.mini-round-two {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 325px;
+  top: 299px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
+}
+
+.mini-round-three {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 310px;
+  top: 299px;
+  background: #033624;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
+}
